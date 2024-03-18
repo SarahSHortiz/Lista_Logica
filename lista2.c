@@ -76,10 +76,35 @@ o seu programa deverá somar esses três valores digitados, e, caso o resultado
 da soma dos três valores seja maior que o dobro do maior valor, a diferença dos
 três valores digitados severpa ser impressa na tela.
 
-#include <stdio.h>
+
 
 int main(){
-  int valor1, valor2, valor3;
+  int valor1, valor2, valor3, dif, soma;
+  
+  printf("digite o primeiro valor");
+    scanf("%d", &valor1);
+  printf("digite o segundo valor");
+    scanf("%d", &valor2);
+ printf("digite o terceiro valor");
+    scanf("%d", &valor3);
+    
+    if (valor1 >= valor2 && valor1 >= valor3) {
+        dif = valor1 - (valor2 + valor3);
+    } else if (valor2 >= valor1 && valor2 >= valor3) {
+        dif = valor2 - (valor1 + valor3);
+    } else {
+        dif = valor3 - (valor1 + valor2);
+    }
+
+    
+  soma = valor1 + valor2 + valor3;
+  
+  
+  if(soma > 2*dif){
+          printf("a diferença é %d", dif);
+          }
+ return 0; 
+}
 
   
 
@@ -124,4 +149,4 @@ int main(){
   }
 
 
-
+exer 5 
