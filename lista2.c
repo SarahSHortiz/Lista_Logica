@@ -383,6 +383,28 @@ int main() {
 }
 
 exer 17
-    
-    
+exer 18
+exer 19
 
+
+exercicio 20 fatorial
+
+#include <stdio.h>
+int main(void){
+int num;
+long long int resultado;
+
+    printf("digite um valor: ");
+        scanf("%d", & num);
+
+    int i = num -1;
+    result = num;
+
+    while(i >1 ){
+    resultado = resultado * 1;
+    i--;
+    }
+    printf("%lld", resultado;
+return 0;
+}
+    
