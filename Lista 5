@@ -28,7 +28,6 @@ return 0;
 
 #3
 
-
 #include <stdio.h>
 
 int main(){
@@ -121,5 +120,79 @@ int num = 10;
 return 0;
 }
 
+
+#6 
+
+#include <stdio.h>
+
+int main(){
+    
+int num = 100;
+
+    do{  
+    if( num % 11 == 0){
+    printf("%d \n ", num);
+    }
+        num--;
+    }
+    while( num >= 1 );
+return 0;
+}
+
+#7 n funciona
+#include <stdio.h>
+
+int main() {
+    int num, dentro = 0, fora = 0, i = 0;
+
+    printf("Digite o valor ");
+    scanf("%d", &num);
+    
+    do {
+        if (num > 10 && num < 157) {
+        	            printf("%d estão dentro", i);
+            dentro++;
+        } else {
+        	            printf("%d estão fora\n", i);
+            fora++;
+        }
+        i++;
+    
+    } while (i < 10);
+            printf("%d estão dentro\n %d estão fora\n", dentro, fora);
+    return 0;
+}
+
+
+8#
+
+
+#include <stdio.h>
+
+int main() {
+    int num, dentro = 0, fora = 0, i = 10;
+
+    printf("Digite o valor ");
+    scanf("%d", &num);
+    
+    do {
+        if (num % 2 == 0) {
+        	            printf("quantidade de par");
+            par+= num;
+        } else {
+        	            printf("quantidade da impar ");
+            impar+= impar;
+        }
+        i++;
+        if (par > impar){
+        printf("tem mais par %d", par );
+        }
+        else{
+            printf("tem mais impar %d", impar );
+        }
+    } while (i <= 15);
+            printf("%d estão dentro\n %d estão fora\n", dentro, fora);
+    return 0;
+}
 
 
