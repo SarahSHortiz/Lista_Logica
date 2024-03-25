@@ -1,0 +1,31 @@
+include <stdio.h>
+
+int main()
+{
+    
+    char nome[5]= "sarah";
+    int i= 0;
+   do{
+       printf("%s", nome);
+              i++;
+
+   }
+   while( i <= 10 );
+}
+
+
+
+2
+
+
+#include <stdio.h>
+
+int main(){
+int valores;
+
+do{ printf("digite o valor" );
+      scanf("%d", & valores[
+
+
+return 0;
+}
