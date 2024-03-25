@@ -1,31 +1,125 @@
+#1
 include <stdio.h>
 
 int main()
 {
-    
-    char nome[5]= "sarah";
     int i= 0;
    do{
-       printf("%s", nome);
+       printf("Sarah \n ");
               i++;
-
    }
    while( i <= 10 );
 }
 
 
+#2
 
-2
+#include <stdio.h>
+
+int main(){
+int i = 10;
+
+    do{ printf("%d \n", i );
+i--;
+}
+    while (i >= 1);
+return 0;
+}
+
+#3
 
 
 #include <stdio.h>
 
 int main(){
-int valores;
+int i= 18;
 
-do{ printf("digite o valor" );
-      scanf("%d", & valores[
+    do{  
+        if( i % 2 != 0){
+    printf("%d \n", i);
+    }
+        i++;
 
+    }
 
+    while ( i <= 347);
+   
 return 0;
 }
+
+#4 
+
+
+#include <stdio.h>
+
+int main(){
+int i= 347;
+
+    do{  
+        if( i % 2 == 0){
+    printf("%d \n", i);
+    }
+        i--;
+
+    }
+    while ( i >= 18);
+return 0;
+}
+
+
+#5 
+#include <stdio.h>
+
+int main(){
+    
+int num, intervaloInicial, intervaloFinal;
+
+printf ("insira o valor inicial");
+        scanf("%d", &intervaloInicial);
+        
+ printf ("insira o valor final");
+        scanf("%d", &intervaloFinal);
+        
+ printf ("insira o numero");
+        scanf("%d", &num);
+    do{  
+        if( num % 2 == 0){
+    printf("valor é par \n ");
+              break;
+    }
+        else{
+    printf("valor é impar \n");
+              break;
+        }
+    }
+        while ( num >= intervaloInicial && num <= intervaloFinal);
+return 0;
+}
+
+#6
+
+#5 
+#include <stdio.h>
+
+int main(){
+    
+int num = 10;
+
+ printf ("%d", num);
+    do{  
+        if( num % 11 == 0){
+    printf("\n ");
+              break;
+    }
+        else{
+    printf("\n");
+              break;
+        }
+    num++;
+    }
+        while ( num <= 100 );
+return 0;
+}
+
+
+
