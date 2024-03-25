@@ -1,1 +1,207 @@
 
+//RESOLVA	OS	EXERCÍCIOS	USANDO	SOMENTE	O	LAÇO WHILE.
+
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 1.	Faça um programa para escrever seu nome 10 vezes na tela.
+
+
+#include <stdio.h>
+
+int main(){
+
+char nome[5]= "sarah";
+int cont;
+
+    while(cont < 10){
+  printf(" %s\n ", nome);
+  cont++;
+    }
+return 0;
+}
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 2.	Faça um programa que escreva os valores de 1 até 10 em ordem inversa na tela.
+
+#include <stdio.h>
+
+int main(){
+
+int numeros=10;
+    while(numeros >= 1){
+  printf(" %d\n ", numeros);
+  numeros--;
+    }
+return 0;
+}
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 3.	Faça um programa que mostra os números ímpares entre 18 e 347 em ordem crescente.
+
+#include <stdio.h>
+
+int main(){
+
+int numeros = 18;
+    while(numeros <= 347){
+      if( numeros % 2 != 0){
+          printf(" %d \n ", numeros);
+      }
+       numeros++;
+    }
+return 0;
+}
+
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 4.	Faça um programa que mostra os números pares entre 18 e 347 em ordem decrescente.
+
+#include <stdio.h>
+
+int main(){
+
+int numeros = 347;
+    while(numeros >= 18){
+      if( numeros % 2 == 0){
+          printf(" %d \n ", numeros);
+      }
+       numeros--;
+    }
+return 0;
+}
+
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 5.	Faça um programa para verificar se um número é par ou ímpar dentro de um intervalo solicitado pelo próprio usuário.
+
+#include <stdio.h>
+
+int main(){
+
+int intervaloInicio, intervaloFim, numero;
+  printf("insira o numero de inicio");
+    scanf("%d",& intervaloInicio);
+
+ printf("insira o numero de final");
+    scanf("%d",& intervaloFim);
+
+ printf("insira o numero que deseja verificar");
+    scanf("%d",& numero);
+
+    while(numero >= intervaloInicio && numero <= intervaloFim ){
+      if( numero % 2 == 0){
+          printf(" é par ");
+          break;
+      }
+      else{
+          printf("impar");
+      }
+      
+    }
+return 0;
+}
+
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 6.	Fazer um programa para exibir os números múltiplos de 11 entre 1 e 100 em ordem decrescente.
+
+#include <stdio.h>
+
+int main(){
+
+int numero = 100;
+
+    while(numero >= 1 ){
+      if( numero % 11 == 0){
+          printf(" %d é multiplo ", numero);
+      } 
+            numero--;
+    }
+return 0;
+}
+
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description:7.	Faça um programa que solicita que o usuário digite 10 valores. O programa deverá contar quantos valores estão dentro do intervalo
+]10,157[ e quantos valores estão fora desse intervalo.
+
+#include <stdio.h>
+
+int main(){
+
+int valores, cont=0;
+
+    while(cont <= 10  ){
+        printf("insira o valor\n");
+                scanf("%d", & valores);
+                  if(valores >= 10 && valores <= 157){
+                          printf("%d esta no intevalo\n", valores);
+                  }
+                  else{
+                          printf("fora do intevalo\n");
+                  }
+                     cont ++;
+      }
+return 0;
+}
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 8.	Faça um programa que leia 15 números inteiros via teclado. O programa deverá:
+
+a.	Imprimir para cada verificação se o valor lido é par ou ímpar.
+b.	Informar quantos valores lidos são pares;
+c.	Informar quantos valores lidos são ímpares;
+
+#include <stdio.h>
+
+int main(){
+
+int valores[15], cont, par, impar;
+
+    while(cont < 15 ){
+        printf("insira o valor\n");
+                scanf("%d", & valores[cont]);
+                  if(valores[cont] %2 == 0){
+                        printf("%d eh par", valores[cont]);
+                          par++;
+                  }
+                  else{
+                        printf("%d eh impar \n", valores[cont]);
+                          impar++;
+
+                  }
+                     cont ++;
+                printf("%d so par e %d sao impar \n", par, impar);
+      } 
+return 0;
+}
+
+//name: Sarah Santos Hortiz
+//date: 24/03/2024
+//description: 9.	Faça um programa que solicita que o usuário digite valores 
+positivos (>0) na tela até que o usuário digite um valor negativo. Ao final o
+programa deverá imprimir a soma dos valores digitados.
+
+#include <stdio.h>
+
+int main() {
+    int valores, soma = 0;
+
+    printf("Insira um valor (digite um valor positivo para parar): ");
+    scanf("%d", &valores);
+
+    while (valores > 0) {
+        
+        if (valores < 0) {
+            soma += valores + valores;
+        }
+        printf("Insira um valor (digite um valor positivo para parar): ");
+        scanf("%d", &valores);
+    }
+
+    printf("A soma dos valores inseridos é: %d\n", soma);
+
+    return 0;
+}
+
+
